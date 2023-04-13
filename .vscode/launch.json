@@ -8,7 +8,8 @@
             "type": "msedge",
             "request": "launch",
             "name": "Open index.html",
-            "file": "c:\\Users\\rando\\Documents\\GitHub\\art101\\lab2\\index.html"
+            "file": "c:\\Users\\rando\\Documents\\GitHub\\art101\\index.html"
         }
     ]
+   
 }
