@@ -16,10 +16,12 @@ border: solid 10px #351648;
 font-size: 30px;
 }
 
+/* Heading */
 h1 {
 text-align: center;
 }
 
+/* Paragraph */
 p {
 padding-left: 10px;
 color: #250174;
