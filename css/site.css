@@ -35,6 +35,11 @@ a {
   color: #222;
 }
 
+#heading a:hover {
+  -webkit-animation: rainbowdropshadow 2s infinite;
+  animation: rainbowdropshadow 2s infinite;
+}
+
 /* Header settings */
 #heading {
   padding-left: 10px;
@@ -76,4 +81,46 @@ a {
   padding-top: 5px;
   text-align: center;
   font-style: italic;
+}
+
+@-webkit-keyframes rainbowdropshadow {
+  0% {
+    text-shadow: 1px 1px 0 #fc1616, 1px 1px 0 #ff8b18, 1px 1px 0 #fcfc2c;
+  }
+  8% {
+    text-shadow: 1px 1px 0 #fe9833, 1px 1px 0 #f9f934, 1px 1px 0 #98f43d;
+  }
+  16% {
+    text-shadow: 1px 1px 0 #f5f53f, 1px 1px 0 #95f633, 1px 1px 0 #42f642;
+  }
+  25% {
+    text-shadow: 1px 1px 0 #a4fa4d, 1px 1px 0 #43f943, 1px 1px 0 #48f9a0;
+  }
+  33% {
+    text-shadow: 1px 1px 0 #49fe49, 1px 1px 0 #47fba1, 1px 1px 0 #49f9f9;
+  }
+  41% {
+    text-shadow: 1px 1px 0 #51f8a5, 1px 1px 0 #4df3f3, 1px 1px 0 #429cf7;
+  }
+  50% {
+    text-shadow: 1px 1px 0 #46f7f7, 1px 1px 0 #4aa3fc, 1px 1px 0 #4848f7;
+  }
+  58% {
+    text-shadow: 1px 1px 0 #71b4f8, 1px 1px 0 #5f5ffc, 1px 1px 0 #9f43fb;
+  }
+  66% {
+    text-shadow: 1px 1px 0 #4545fa, 1px 1px 0 #9e42fa, 1px 1px 0 #fb4cfb;
+  }
+  75% {
+    text-shadow: 1px 1px 0 #a858f9, 1px 1px 0 #fa5dfa, 1px 1px 0 #f660ab;
+  }
+  83% {
+    text-shadow: 1px 1px 0 #fd66fd, 1px 1px 0 #f855a6, 1px 1px 0 #ff5f5f;
+  }
+  91% {
+    text-shadow: 1px 1px 0 #ff63b1, 1px 1px 0 #ff5353, 1px 1px 0 #f79737;
+  }
+  100% {
+    text-shadow: 1px 1px 0 #fb4747, 1px 1px 0 #fc9f43, 1px 1px 0 #f7f73e;
+  }
 }
