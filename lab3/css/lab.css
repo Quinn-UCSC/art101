@@ -11,3 +11,28 @@
 .padding {
   padding-bottom: 10px;
 }
+
+.center h1 {
+  text-align: center;
+}
+
+.structphoto {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1000px;
+}
+
+.htmlJPG {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1000px;
+}
+
+.local {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1000px;
+}
