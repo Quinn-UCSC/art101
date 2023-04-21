@@ -8,6 +8,22 @@ body {
   background-color: #50808E;
 }
 
+/* Header settings */
+#heading {
+  padding-left: 10px;
+  padding-bottom: 1px;
+  border: solid 1px #888;
+  background-color: #ebebeb;
+}
+
+/* the period in a CSS selector selects an element by class, e.g., class="minor-section" */
+.minor-section {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: solid 1px #888;
+  background-color: #DDD8C4;
+}
+
 /* Sets hyperlinks to row format */
 #main-nav {
   flex-direction: row;
@@ -29,29 +45,10 @@ body {
   text-transform: none;
 }
 
-/* Removes underlines and replaces color from hyperlink text */
-a {
-  text-decoration: none; 
-  color: #222;
-}
-
+/* When hovering over the menu in the heading, play rainbow animation. */
 #heading a:hover {
   -webkit-animation: rainbowdropshadow 2s infinite;
   animation: rainbowdropshadow 2s infinite;
-}
-
-/* Header settings */
-#heading {
-  padding-left: 10px;
-  padding-bottom: 1px;
-  border: solid 1px #888;
-  background-color: #ebebeb;
-}
-
-/* Homepage Title font settings */
-#home-page title {
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-size: 200%;
 }
 
 /* the hashtag in a CSS selector selects an element by id, e.g., id="content" */
@@ -61,13 +58,6 @@ a {
   border: solid 1px #888;
   background-color: #84B59F;
   font-family:Verdana, Geneva, Tahoma, sans-serif;
-}
-
-/* About Me */
-.minor-section h2 {
-  background-color: rgba(233, 225, 225, 0.238);
-  border: solid 0.2px black;
-  text-align: center;
 }
 
 /* the period in a CSS selector selects an element by class, e.g., class="minor-section" */
@@ -123,4 +113,82 @@ a {
   100% {
     text-shadow: 1px 1px 0 #fb4747, 1px 1px 0 #fc9f43, 1px 1px 0 #f7f73e;
   }
+}
+
+/* General Site Settings - Ranging from text options to other personalized changes.*/
+
+/* Anytime the id for bold is used, it makes the text bold */
+#bold{
+  font-weight: bold;
+  }
+/* Anytime the id for italics is used, it makes the text italic */
+#italics{
+    font-style: italic;
+    }
+/* Anytime the id for underline is used, it makes the text underlined */
+#underline {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+}
+/* Anytime the id for dramatic is used, it makes the text have a line on top or bottom of the section */
+#dramatic {
+  text-decoration: underline overline black;
+}
+
+/* Anytime the id for paragraph is used, it makes the text have a identation, similar to a paragraph in a essay. */
+#paragraph {
+  text-indent: 30%;
+}
+/* Anytime the id for citation is used, it makes the text have a indentation after the second line, similar to a citation in a citations page in a essay. */
+#citation {
+  text-indent: -3em;
+}
+/* Anytime the id for verticle is used, it makes the text appear vertically */
+#verticle {
+  writing-mode: vertical-rl;
+}
+/* Anytime the id for bullet is used, it makes the text have a bullet on the left */
+#bullet {
+  display: list-item;
+  margin-left: 20px;
+}
+/* Anytime the id for circle is used, it makes the text have a circle on the left */
+#circle {
+  display: list-item;
+  margin-left: 20px;
+  list-style-type: circle;
+  list-style-position: inside;
+}
+/* Anytime the id for square is used, it makes the text have a square on the left */
+#square {
+  display: list-item;
+  margin-left: 20px;
+  list-style-type: square;
+  list-style-position: inside;
+}
+/* Anytime the id for arrow is used, it makes the text have a arrow on the left */
+#arrow {
+  display: list-item;
+  margin-left: 20px;
+  list-style-type: "\1F806";
+  list-style-position: inside;
+}
+/* Anytime the id for arrow_head is used, it makes the text have a arrowhead on the left */
+#arrow_head {
+  display: list-item;
+  margin-left: 20px;
+  list-style-type: "\2B9A";
+  list-style-position: inside;
+}
+/* Anytime the id for thumbs_up is used, it makes the text have a thumbs_up on the left */
+#thumbs_up {
+  display: list-item;
+  margin-left: 20px;
+  list-style-type: "\1F44D";
+  list-style-position: inside;
+}
+/* Removes underlines and replaces color from hyperlink text */
+a {
+  text-decoration: none; 
+  color: #222;
 }
