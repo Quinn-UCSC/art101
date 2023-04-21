@@ -1,21 +1,11 @@
-// index.js - purpose and description here
-// Author: Your Name
-// Date:
+// Rock_Paper_Scissors
+// An implementation of the game
+// @author Michael Quinn <migquinn@ucsc.edu> and Kira Way 
+// April 21st 2023
 
-// Constants
-
-// Functions
-
-// this is an example function and this comment tells what it doees and what parameters are passed to it.
-function myFunction(param1, param2) {
-  // some code here
-  // return results;
-}
-
-function main() {
-  console.log("Main function started.");
-  // the code that makes everything happen
-}
-
-// let's get this party started
-main();
+// Ask for rock, paper, or scissors
+// Collect user input
+// Randomly select rock, paper, or scissors for computer input
+// Calculate results
+// Tell user if they won, lost, or tied
+// Let the player start again
