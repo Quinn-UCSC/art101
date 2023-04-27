@@ -1,7 +1,7 @@
 /*
 *   Author: Michael Quinn
 *   Date: 04-27-2023
-*   Description: Practing Arrays
+*   Description: Practicing Arrays
 */
 
 //Constants
