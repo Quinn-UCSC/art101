@@ -22,6 +22,7 @@ myRide.color = "Grey";
 myRide.year = "1995";
 myRide.extras = ["torn seats", "leaky moon roofs", "broken cassette player"];
 var transportation = [myRide];
+sortMyArray = [1,2,3,4,5];
 
 //Functions
 function main() {
@@ -33,4 +34,8 @@ function main() {
     console.log(newArray[1][2]);
     console.log("My ride is a", myRide.color, myRide.year, myRide.make, myRide.model, myRide.extras);
     document.writeln("My ride is a", myRide.color, myRide.year, myRide.make, myRide.model, myRide.extras);
+    console.log("Array sorted: ", sorted(sortMyArray));
 }
+
+//Runs main function
+    main();
