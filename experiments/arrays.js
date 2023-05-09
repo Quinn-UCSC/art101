@@ -23,8 +23,13 @@ myRide.year = "1995";
 myRide.extras = ["torn seats", "leaky moon roofs", "broken cassette player"];
 var transportation = [myRide];
 sortMyArray = [1,2,3,4,5];
+mySortedArray = [1,15,2,24,3,45,5,6,65];
 
 //Functions
+function betterSort(a,b) {
+	return a-b;
+}
+
 function main() {
     console.log(shopping_list[1]);
     console.log(shopping_list.length);
@@ -35,6 +40,7 @@ function main() {
     console.log("My ride is a", myRide.color, myRide.year, myRide.make, myRide.model, myRide.extras);
     document.writeln("My ride is a", myRide.color, myRide.year, myRide.make, myRide.model, myRide.extras);
     console.log("Array sorted: ", sorted(sortMyArray));
+    console.log("Array more accurately sorted:" , mySortedArray.sort(betterSort));
 }
 
 //Runs main function
