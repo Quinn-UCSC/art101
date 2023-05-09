@@ -33,7 +33,7 @@ var squareRoot = makeArray.map(function sq(x) {
 //Should return the values of the array but each value is squared.
 console.log("This is the square-root of my array: ", squareRoot);
 
-var mapResults = ["This is an array I made: " + makeArray + ".</br>" + "Test whether or not each element is even: " + result + ".</br>" + "New values of array once square-rooted: " + squareRoot + ".</br>"];
+var mapResults = ["This is an array I made: " + makeArray + ".</br>" + "Test whether or not each element is even: " + result + ".</br>" + "New values of array once squared: " + squareRoot + ".</br>"];
 
 var outputEl = document.getElementById("output"); 
 outputEl.innerHTML = mapResults; // put your results here
