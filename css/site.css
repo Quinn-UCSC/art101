@@ -5,7 +5,7 @@
 /* we can select an html element tag, in this case "body" will apply to the whole document */
 /* background body color */
 body {
-  background-color: #50808E;
+  background-color: #659DBD;
 }
 
 /* Header settings */
@@ -43,20 +43,31 @@ body {
   margin: 0em 0 0 1.6em;
   padding: 0;
   text-transform: none;
+  transform: scale(1);
+  transition: all 0.3s ease-in-out 0.2s;
+}
+
+#main-nav li:hover {
+  transform: scale(1.5);
+  transition: all 0.3s ease-in-out 0.2s;
 }
 
 /* When hovering over the menu in the heading, play rainbow animation. */
 #heading a:hover {
   -webkit-animation: rainbowdropshadow 2s infinite;
   animation: rainbowdropshadow 2s infinite;
+
+  opacity: 1;
+  transform: scale(1);
+  transition: all 0.3s ease-in-out 0.1s;
 }
 
 /* the hashtag in a CSS selector selects an element by id, e.g., id="content" */
 #content {
   margin: 10px;
   padding: 10px;
-  border: solid 1px #888;
-  background-color: #84B59F;
+  /* border: solid 1px #888; */
+  /* background-color: #84B59F; */
   font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -68,11 +79,15 @@ body {
 }
 
 #links {
-  padding-top: 5px;
+  position: relative;
+    top: -10px;
+    left: 0px;
+  margin: auto;
   text-align: center;
   font-style: italic;
 }
 
+/* Animates rainbow-text shadow */
 @-webkit-keyframes rainbowdropshadow {
   0% {
     text-shadow: 1px 1px 0 #fc1616, 1px 1px 0 #ff8b18, 1px 1px 0 #fcfc2c;
@@ -112,6 +127,18 @@ body {
   }
   100% {
     text-shadow: 1px 1px 0 #fb4747, 1px 1px 0 #fc9f43, 1px 1px 0 #f7f73e;
+  }
+}
+/* Animates a bit of bouncing animation */
+@keyframes zoom-in-out {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.02);
+  }
+  100% {
+    transform: scale(1);
   }
 }
 

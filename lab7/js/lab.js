@@ -40,7 +40,7 @@ function caseInsensitiveSort(a, b) {
   }
 }
 
-var arrayInput = input();
+// var arrayInput = input();
 
 function main() {
   document.writeln("I have sorted your name, is this correct: ", sortInput(), "<br>");
