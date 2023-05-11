@@ -8,6 +8,13 @@
   background-color: #DDD8C4;
 }
 
+#heading {
+  padding-left: 10px;
+  padding-bottom: 1px;
+  border: solid 1px #888;
+  background-color: #ebebeb;
+}
+
 #content {
 background-color:azure;
 margin: 50px;

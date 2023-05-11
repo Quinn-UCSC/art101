@@ -3,17 +3,49 @@
 /* you can pick your own background colors, text colors, and fonts */
 
 /* we can select an html element tag, in this case "body" will apply to the whole document */
+
 /* background body color */
 body {
   background-color: #659DBD;
+}
+
+/* Set the color of text inside the <h1> element to white */
+#content h1 {
+  color: white;
+}
+
+/* Set the color of links within the element with the ID "links" to white */
+#links a {
+  color: white;
+}
+
+/* Set the positioning of the element with the ID "results" */
+#results {
+  position: relative; /* The element is positioned relative to its normal position */
+  top: -20px; /* Move the element 10 pixels up from its normal position */
+  bottom: -50px; /* Move the element 20 pixels down from its normal position */
+  left: 0px; /* Keep the element's horizontal position unchanged */
+}
+
+#results h3 {
+  font-size: 20px;
+}
+
+/* Set the positioning of the element with the ID "output" */
+#output {
+  position: relative; /* The element is positioned relative to its normal position */
+  top: -10px; /* Move the element 10 pixels up from its normal position */
+  left: 0px; /* Keep the element's horizontal position unchanged */
 }
 
 /* Header settings */
 #heading {
   padding-left: 10px;
   padding-bottom: 1px;
-  border: solid 1px #888;
-  background-color: #ebebeb;
+  /* border: solid 1px #888;
+  background-color: #ebebeb; */
+  border: solid 0px #888;
+  background-color: transparent;
 }
 
 /* the period in a CSS selector selects an element by class, e.g., class="minor-section" */

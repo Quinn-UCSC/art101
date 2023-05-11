@@ -1,5 +1,10 @@
 /* Here we can set styles for this lab page that we don't want to effect others pages */
 
+  body {
+    background-image: url('https://ssl-forum-files.fobby.net/forum_attachments/0002/8140/CoffeeBreak.gif');
+    background-size: contain;
+  }
+
   .results {
     padding-left: 60px;
   }

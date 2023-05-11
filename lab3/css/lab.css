@@ -1,6 +1,16 @@
 /* Here we can set styles for this lab page that we don't want to effect others pages */
 
 /* the period in a CSS selector selects an element by class, e.g., class="minor-section" */
+
+body {
+  background-image: url("https://cdn.dribbble.com/users/1746237/screenshots/11276091/media/fa47c19cbbbc00b2f5eceda0459c34db.gif");
+  /* background-size: contain; */
+}
+
+#content h2 {
+  color: black;
+}
+
 .minor-section {
     padding: 10px;
     margin-bottom: 10px;
