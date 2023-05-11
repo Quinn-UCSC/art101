@@ -25,6 +25,7 @@ font-size: 30px;
 
 /* Heading */
 #content h1 {
+color: black;
 text-align: center;
 }
 
@@ -32,4 +33,9 @@ text-align: center;
 p {
 padding-left: 10px;
 color: #250174;
+}
+
+/* Anchor */
+#content a {
+  color: black;
 }

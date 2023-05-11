@@ -18,6 +18,8 @@ body {
   animation: zoom-in-out 2s infinite;
   padding-left: 10px;
   padding-top: 10px;
+  max-width: 50%;
+  max-height: 50%;
 }
 
 #txt {

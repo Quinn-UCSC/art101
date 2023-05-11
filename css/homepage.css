@@ -11,7 +11,7 @@ body {
   border: solid 1px white;
   margin-left: auto;
   margin-right: auto;
-  max-width: 300px;
+  max-width: 25%;
 
   animation: zoom-in-out 2s ease-in-out infinite;
   transform-origin: center;

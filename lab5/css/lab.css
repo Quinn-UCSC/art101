@@ -2,22 +2,32 @@
 
 /* the period in a CSS selector selects an element by class, e.g., class="minor-section" */
 
+/* Styles for the body */
 body {
-  background-image: url("https://cdn.dribbble.com/users/364180/screenshots/15393316/media/8bed7937b22e457ff724f533ea747503.gif");
-  background-size: contain;
+background-image: url("https://cdn.dribbble.com/users/364180/screenshots/15393316/media/8bed7937b22e457ff724f533ea747503.gif");
+background-size: contain;
 }
 
+/* Styles for the h1 element inside the #content element */
 #content h1 {
-  color: black;
+color: black;
 }
 
+/* Styles for the .minor-section class */
 .minor-section {
-    padding: 10px;
-    margin-bottom: 10px;
-    border: solid 1px #888;
-    background-color: #DDD8C4;
-  }
+padding: 10px;
+margin-bottom: 10px;
+border: solid 1px #888;
+background-color: #DDD8C4;
+}
 
-  pre {
-    font-style: italic;
-  }
+/* Styles for the <pre> element */
+pre {
+font-style: italic;
+}
+
+/* Styles for the #gif element */
+#gif {
+max-width: 50%;
+max-height: 50%;
+}
