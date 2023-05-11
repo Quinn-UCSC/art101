@@ -1,9 +1,9 @@
 /* Here we can set styles for this lab page that we don't want to effect others pages */
 
 /* the period in a CSS selector selects an element by class, e.g., class="minor-section" */
-body {
+/* body {
   background: url("https://wallpapercave.com/wp/wp3615332.jpg");
-  background-size: contain;
+  background-size: cover;
 }
 
 #heading {
@@ -12,31 +12,7 @@ body {
 
 #heading a {
   color: white;
-}
-
-#kittychef-gif {
-  animation: zoom-in-out 2s infinite;
-  padding-left: 10px;
-  padding-top: 10px;
-}
-
-#txt {
-  font-style: italic;
-  padding-left: 10px;
-}
-
-/* Animates a bit of bouncing animation */
-@keyframes zoom-in-out {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.05);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
+} */
 
 .minor-section {
     padding-left: 10px;

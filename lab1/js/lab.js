@@ -12,6 +12,9 @@ function myFunction(param1, param2) {
   // return results;
 }
 
+// var video = document.getElementById('myVideo');
+// video.play();
+
 function main() {
   console.log("Main function started.");
   // the code that makes everything happen

@@ -4,7 +4,7 @@
 
 body {
   background-image: url("https://media.tenor.com/E3pRY-dMRs8AAAAC/jrpg-dragon-quest-xi.gif");
-  background-size: cover;
+  background-size: contain;
 }
 
 #heading {
