@@ -177,6 +177,49 @@ font-style: italic;
   }
 }
 
+/* Define the keyframe animation called "shake" */
+@keyframes shake {
+  /* At 0% of the animation, the text is not translated (initial position) */
+  0% { transform: translate(0, 0); }
+
+  /* The text moves slightly to the top left at 10% of the animation */
+  10% { transform: translate(-2px, -2px); }
+
+  /* The text moves slightly to the top right at 20% of the animation */
+  20% { transform: translate(2px, -2px); }
+
+  /* The text moves slightly to the bottom left at 30% of the animation */
+  30% { transform: translate(-2px, 2px); }
+
+  /* The text moves slightly to the bottom right at 40% of the animation */
+  40% { transform: translate(2px, 2px); }
+
+  /* The text moves slightly to the top left at 50% of the animation */
+  50% { transform: translate(-2px, -2px); }
+
+  /* The text moves slightly to the top right at 60% of the animation */
+  60% { transform: translate(2px, -2px); }
+
+  /* The text moves slightly to the bottom left at 70% of the animation */
+  70% { transform: translate(-2px, 2px); }
+
+  /* The text moves slightly to the bottom right at 80% of the animation */
+  80% { transform: translate(2px, 2px); }
+
+  /* The text moves slightly to the top left at 90% of the animation */
+  90% { transform: translate(-2px, -2px); }
+
+  /* At 100% of the animation, the text is not translated (back to initial position) */
+  100% { transform: translate(0, 0); }
+}
+
+/* Apply the animation to elements with the class "shaky-text" */
+.shaky-text {
+  /* position: relative;
+  display: inline-block; */
+  animation: shake 0.5s infinite;
+}
+
 /* General Site Settings - Ranging from text options to other personalized changes.*/
 
 /* Anytime the id for bold is used, it makes the text bold */

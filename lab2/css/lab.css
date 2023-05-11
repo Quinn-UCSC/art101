@@ -39,3 +39,26 @@ color: #250174;
 #content a {
   color: black;
 }
+
+/*canvas {
+  border: 1px solid black;
+}*/
+
+/* .shaky-text span {
+  display: inline-block;
+  animation: shake 0.2s infinite;
+}
+
+/* CSS styling for the shaking text */
+/* .shaking-text {
+  display: inline-block;
+  text-align: center;
+  animation: randomShake 0.8s infinite; /* Apply the "shake" animation for 0.8 seconds infinitely }*/
+
+/*@keyframes randomShake {
+  /* Define the keyframes for the "shake" animation */
+  /*0% { transform: translate(0, 0); } /* Initial position */
+  /*10% { transform: translate(-2px, 2px) rotate(1deg); } /* Randomized movement */
+  /*20% { transform: translate(2px, -2px) rotate(-1deg); } /* Randomized movement */
+  /* ... Continue defining keyframes for the desired shaking effect */
+  /*100% { transform: translate(0, 0); } /*Return to the initial position }*/
