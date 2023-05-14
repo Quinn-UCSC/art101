@@ -14,6 +14,19 @@
   color: white;
 } */
 
+body {
+  background-image: url("https://steamuserimages-a.akamaihd.net/ugc/1035212664432783491/DC5861C0A6CCFA9F5454221E36D55290939CF36D/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false");
+  background-size: contain;
+}
+
+#heading {
+  color: white;
+}
+
+#heading a {
+  color: white;
+}
+
 .minor-section {
     padding-left: 10px;
     margin-bottom: 10px;
