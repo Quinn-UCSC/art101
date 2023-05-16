@@ -44,6 +44,9 @@ function sortInput(name) {
     var sorted = sortInput(name);
     var output = document.getElementById("output");
     output.innerHTML = sorted;
+    // var newEl = document.createElement("h1");
+    // newEl.innerHTML = sorted;
+    // output.appendChild(newEl);
   })
 
 colorChanger();
