@@ -43,10 +43,17 @@ function sortInput(name) {
     var name = document.getElementById("user-name").value;
     var sorted = sortInput(name);
     var output = document.getElementById("output");
-    output.innerHTML = sorted;
-    // var newEl = document.createElement("h1");
-    // newEl.innerHTML = sorted;
-    // output.appendChild(newEl);
+    output.innerHTML = "<span style='font-style: italic;'>" + sorted + "</span>";
+    // var newEl = document.createElement("h1");  // Testing something
+    // newEl.innerHTML = sorted;  // Testing something
+    // output.appendChild(newEl); // Testing something
+
+    // var spanElement = document.createElement('span'); // Optional other method.
+    // spanElement.textContent = sorted;
+    // spanElement.style.color = 'red';
+  
+    // // Append the span element to the output element
+    // output.appendChild(spanElement);
   })
 
 colorChanger();
