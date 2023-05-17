@@ -1,0 +1,35 @@
+/* Here we can set styles for this lab page that we don't want to effect others pages /
+
+/ the period in a CSS selector selects an element by class, e.g., class="minor-section" */
+.minor-section {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: solid 1px #888;
+  background-color: #DDD8C4;
+}
+
+.special {
+  filter: invert(1);
+}
+
+body {
+  background-image: url("https://barotraumagame.com/wp-content/uploads/2023/03/image.png?id=6125");
+  background-size: contain;
+}
+
+#heading {
+  color: white;
+}
+
+#heading a {
+  color: white;
+}
+
+.minor-section {
+    padding-left: 10px;
+    margin-bottom: 10px;
+    border: solid 1px #888;
+    background-color: #DDD8C4;
+  }
+
+  
