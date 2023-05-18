@@ -16,7 +16,9 @@
 
 body {
   background-image: url("https://steamuserimages-a.akamaihd.net/ugc/1035212664432783491/DC5861C0A6CCFA9F5454221E36D55290939CF36D/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false");
-  background-size: contain;
+  background-size: cover; /* The 'background-size' property is set to 'cover', ensuring that the image covers the entire background area of the body element. */
+  resize: both; /* The 'resize' property is set to 'both', allowing the body element to be resized in both horizontal and vertical directions. */
+  overflow: scroll; /* The 'overflow' property is set to 'scroll', adding a scrollbar to the body element for scrolling when content exceeds the visible area. */
 }
 
 #heading {

@@ -14,7 +14,9 @@
 
 body {
   background-image: url("https://barotraumagame.com/wp-content/uploads/2023/03/image.png?id=6125");
-  background-size: contain;
+  background-size: cover; /* The 'background-size' property is set to 'cover', ensuring that the image covers the entire background area of the body element. */
+  resize: both; /* The 'resize' property is set to 'both', allowing the body element to be resized in both horizontal and vertical directions. */
+  overflow: scroll; /* The 'overflow' property is set to 'scroll', adding a scrollbar to the body element for scrolling when content exceeds the visible area. */
 }
 
 #heading {
