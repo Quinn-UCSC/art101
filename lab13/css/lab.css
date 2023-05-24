@@ -1,0 +1,61 @@
+/* Here we can set styles for this lab page that we don't want to effect others pages /
+
+/ the period in a CSS selector selects an element by class, e.g., class="minor-section" */
+.minor-section {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: solid 1px #888;
+  background-color: #DDD8C4;
+}
+
+.special {
+  filter: invert(1);
+}
+
+body {
+  background-image: url("https://media.istockphoto.com/id/1279827701/vector/pixel-art-of-dinosaur-describing-offline-error-for-internet.jpg?s=612x612&w=0&k=20&c=HoeCica3tfij9WcWTJGzBRU-5qTUAxud_jslB4LYEpc=");
+  background-size: contain; /* The 'background-size' property is set to 'cover', ensuring that the image covers the entire background area of the body element. */
+  resize: both; /* The 'resize' property is set to 'both', allowing the body element to be resized in both horizontal and vertical directions. */
+  overflow: scroll; /* The 'overflow' property is set to 'scroll', adding a scrollbar to the body element for scrolling when content exceeds the visible area. */
+}
+
+#heading {
+  color: rgb(0, 0, 0);
+}
+
+#heading a {
+  color: rgb(0, 0, 0);
+}
+
+#content h1 {
+ color: black;
+}
+
+#my-button {
+  flex: 1 1 auto;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+  /* text-transform: uppercase; */
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: rgba(0, 0, 0, 0.097);
+  border: rgb(0, 0, 0) 0px;
+ /* text-shadow: 0px 0px 10px rgba(0,0,0,0.2);*/
+  background-image: linear-gradient(to right, #fbc2eb 0%, #a6c1ee 51%, #fbc2eb 100%);
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+}
+
+#my-button:hover {
+  background-position: right center; /* change the direction of the change here */
+}
+
+.minor-section {
+    padding-left: 10px;
+    margin-bottom: 10px;
+    border: solid 1px #888;
+    background-color: #DDD8C4;
+  }
+
+  
