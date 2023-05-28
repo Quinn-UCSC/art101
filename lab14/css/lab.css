@@ -1,0 +1,48 @@
+/* Here we can set styles for this lab page that we don't want to effect others pages /
+
+/ the period in a CSS selector selects an element by class, e.g., class="minor-section" */
+.minor-section {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: solid 1px #888;
+  background-color: #DDD8C4;
+}
+
+body {
+  background-image: url("https://media.tenor.com/eM6wlPUEvn8AAAAC/monarch-butterfly-fly.gif");
+  background-size: contain; /* The 'background-size' property is set to 'cover', ensuring that the image covers the entire background area of the body element. */
+  resize: both; /* The 'resize' property is set to 'both', allowing the body element to be resized in both horizontal and vertical directions. */
+  overflow: scroll; /* The 'overflow' property is set to 'scroll', adding a scrollbar to the body element for scrolling when content exceeds the visible area. */
+}
+
+#results img{
+  max-width: 50%;
+  max-height: 50%;
+}
+
+#heading {
+  color: black;
+}
+
+#heading a {
+  color: black;
+}
+
+#content h1 {
+  color: black;
+}
+
+#left-gif {
+  float: left;
+  margin-right: 20px; /* Adjust the spacing between the GIF and other content */
+  max-height: 100px;
+}
+
+.minor-section {
+    padding-left: 10px;
+    margin-bottom: 10px;
+    border: solid 1px #888;
+    background-color: #DDD8C4;
+  }
+
+  
