@@ -15,6 +15,7 @@ $("#activate").click(function(){
         data: {},
     })
     .done(function(data) {
+        $("#output").empty();
         var berry = "My favorite berry from Pokemon is " + data.name + ".";
         // var flavor = "The flavor of the berry is " + JSON.stringify(data.flavors) + ".";
         console.log(berry);
