@@ -2,7 +2,7 @@
 <html>
 <head>
 	<!-- This title is used for tabs and bookmarks -->
-	<title>Lab 14 - Debugging Tools and Strategies</title>
+	<title>Lab 16 - JSON and APIs</title>
 
 	<!-- Use UTF character set, a good idea with any webpage -->
   	<meta charset="UTF-8" />
@@ -18,7 +18,6 @@
 	<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 </head>
 <body>
-	<img src = "https://i.pinimg.com/originals/64/a5/ed/64a5ed73fad3a67faa009b8cce0d0a2e.gif" id = "left-gif">
 			<!-- Copy & Paste from Homepage html -->
 			<div id = "heading"> 
 				<section id = "home-page title">
@@ -84,46 +83,37 @@
 	<!-- Style this page by changing the CSS in ../css/site.css or css/lab.css -->
 	<main id="content">
 		<section>
-			<h1>Lab 14 - Debugging Tools and Strategies</h1>
+			<h1>Lab 16 - JSON and APIs</h1>
 			<div class="minor-section" id = "challenge">
 					<h2>Challenge</h2>
-					<p>The challenge of this lab is to debug previous lab assignments.</p>
+					<p>The challenge of this lab is to call the API and practice using JSON files.<p>
 			</div>
 
 			<div class="minor-section" id = "problems">
 					<h2>Problems</h2>
-					<p>My lab partner had a problem with a error-handling where the user put a non-numerical number, it would return null.</p>
+					<p>Our group had some issues figuring out how to get the entire alt text to appear because the alt text needed to be in quotations but since it included an apostrophe it kept complaining.
+						Before, some alt text would appear at a time and not the full length but we found a solution around it. Also the CORPS problem occurred in our group as well which led to everything
+						not loading. 
+					</p>
 			</div>
 
 			<div class="minor-section">
 					<h2>Reflection</h2>
-					<p>We used pair programming to discuss the code and figure out the solutions for my partner's errors.</p>
+					<p>Our team worked diligently to figure out the errors. Unfortunately we were left with no success due to the professor having the same problem and no sufficient solutions appeared
+						when researching.
+					</p>
 			</div>
 
 			<div class="minor-section"><div id = "results">
-					<h2>Debugging Results</h2>
-					<p id = "italics">Please take a look at the results of my partner's debugging.</p>
-					<p>"Looking back at this lab, I realized that the program would behave in an undefined manner if the user
-                        were to input non-numerical values instead of numbers for the maxNum or factors. Therefore, I decided to add 
-                        more error handling for that. I found out a way using regular expressions, and had some bumps along the way.</p>
-
-                    <p>I first noticed that using the regular expression wasn't capturing non-numerical values at first. After printing
-                        out the var.match(regex) value to the console, I realized that the value would be null if there was no match.
-                        I thought that the value was going to be true if it didn't match but evidently, I thought wrong (aka I thought the opposite).</p>
-
-                    <p>After that, it finally began capturing non-numerical values. However, the regex also captured empty values and
-                        displayed the non-numerical error message along with the empty value message when it was just an empty field. That I did not want.
-                        Therefore, I added on last condition while searching for non-numerical values - it cannot be empty. After that, my program worked
-                        completely as expected.</p>
-
-                    <p>Below you can see my code and how my website reacts to certain user inputs: "</p>
-					<img src = "./img/code.png" alt = "JS Code">
-					<img src = "./img/ex1.png" alt = "Invalid Error 1">
-					<img src = "./img/ex2.png" alt = "Invalid Error 2">
-					<img src = "./img/ex3.png" alt = "Invalid Error 3">
+				<h2>Results</h2>
+				<p>Please take a look at the results.</p>
+				<h3>Script Output:</h3>
+				<div id = "output"></div>
+				<script src="js/lab.js">defer</script>
+		</div>
 		</section>
 		<nav id="links">
-			<a href = "https://bruceb002.github.io/art101/lab14/">My Lab Partner's Website</a>
+			<a href = "https://katucsc.github.io/art101/lab16/">My Lab Partner's Website</a>
 			<pre></pre>
 			<a href = "js/lab.js">Check out my javascript!</a>
 		</nav>
