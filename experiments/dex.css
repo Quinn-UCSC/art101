@@ -1,8 +1,14 @@
 @font-face {
     font-family: 'PokemonGB';
-    src: url('fonts/PokemonGB.ttf') format('truetype');
+    src: url('../fonts/PokemonGB.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
+  }
+
+  h2 #begin {
+    position: absolute;
+    padding: 20px;
+    text-align: center;
   }
 
   .overlay {
@@ -37,21 +43,22 @@
   }
 
   .pokemonInfo {
-    font-size: 14px; /* Adjust the font size as needed */
+    font-size: 12px; /* Adjust the font size as needed */
     text-align: left;
     left: 171px;
-    top: 34px;
+    top: 36px;
     color: white; /* Set the text color to white */
-    word-spacing: 20px;
+    word-spacing: 1px;
     font-family: "PokemonGB";
     position: relative; /* Set position to relative to establish a new stacking context */
     z-index: 1; /* Set a higher stacking order to display on top of the background image */
   }
 
   .pokemonTypes {
-    font-size: 14px; /* Adjust the font size as needed */
+    font-size: 8.5px; /* Adjust the font size as needed */
     text-align: left;
     color: black; /* Set the text color to black */
+    font-weight: 100;
     white-space: nowrap; /* Prevent line breaks between words */
     font-family: 'PokemonGB';
     position: relative; /* Set position to relative to establish a new stacking context */
@@ -60,22 +67,22 @@
 
   .pokemonType.type-1 {
     position: relative;
-    left: 220px;
-    top: 70px;
+    left: 215px;
+    top: 85.5px;
     z-index: 1; /* Set a higher stacking order to display on top of the background image */
   }
   
   .pokemonType.type-2 {
     position: relative;
-    left: 304px;
-    top: 39px;
+    left: 298px;
+    top: 69px;
     z-index: 1; /* Set a higher stacking order to display on top of the background image */
   }
 
   .pokemonAttributes {
     position: absolute;
     left: 248px;
-    top: 140px;
+    top: 141px;
     font-family: 'PokemonGB';
   }
 
@@ -109,15 +116,27 @@
     clear: both;
   }
   
-  .pokemon-attributes {
-    margin-left: 180px;
+  .basestats {
+    color: black;
+    position: absolute;
+    left: 8px;
+    top: 231px;
+    z-index: 1;
+    font-size: 12px;
+  }
+  
+  .basestats ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+  }
+  
+  .basestats li {
+    display: inline-block;
+    margin-right: 10px; /* Adjust the spacing between items */
   }
 
   .pokemon-attributes ul {
     list-style: none;
     padding: 0;
-  }
-
-  .pokemon-attributes li {
-    margin-bottom: 5px;
   }
