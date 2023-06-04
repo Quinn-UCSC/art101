@@ -105,3 +105,18 @@ p:hover{
 #links a:hover{
   animation-play-state: running;
 }
+
+/* CSS to style the dropdown menu */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  margin-top: 0;
+  padding: 0;
+  z-index: 1;
+}
+
+li:hover .dropdown-menu {
+  display: block;
+}

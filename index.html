@@ -13,9 +13,9 @@
 	<link rel="stylesheet" type="text/css" href="css/site.css">
 	<!-- Lab-specifc CSS file for any special styling of this particular page -->
 	<link rel="stylesheet" type="text/css" href="css/homepage.css">
-	<!-- Link to javascript file - DEFER waits until all elements are rendered -->
 
-	<!-- <script type="text/javascript" src="./js/lab.js" DEFER></script> -->
+	<!-- Link to javascript file - DEFER waits until all elements are rendered -->
+	<script src="experiments/dropdown.js">defer</script>
 </head>
 <body>
 	<!-- Style this page by changing the CSS in ../css/site.css or css/lab.css -->
@@ -26,7 +26,11 @@
 	<div id = "row.main-navigation"> 
 			<ul id ="main-nav">
 				<li class = "first" role="menuitem">
-					<a href = "experiments/index2.html">Experiment</a>
+					<a href="experiments/index2.html">Experiment</a>
+					<ul class="dropdown-menu">
+						<li><a href="experiments/pokedex.html">Pokédex</a></li>
+						<!-- Add more experiment options here -->
+					  </ul>
 				</li>
 				<li role="menuitem">
 					<a href = "lab1/index.html">Lab1</a>
