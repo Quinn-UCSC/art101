@@ -68,21 +68,21 @@
   .pokemonType.type-1 {
     position: relative;
     left: 215px;
-    top: 85.5px;
+    top: 84px;
     z-index: 1; /* Set a higher stacking order to display on top of the background image */
   }
   
   .pokemonType.type-2 {
     position: relative;
     left: 298px;
-    top: 69px;
+    top: 66px;
     z-index: 1; /* Set a higher stacking order to display on top of the background image */
   }
 
   .pokemonAttributes {
     position: absolute;
     left: 248px;
-    top: 141px;
+    top: 145px;
     font-family: 'PokemonGB';
   }
 

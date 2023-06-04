@@ -22,7 +22,7 @@ $(document).ready(function() {
       var loadingImage = $("<img>").attr("src", "https://thumbs.gfycat.com/AcclaimedUnsightlyAngelfish-size_restricted.gif").addClass("loading-gif");
       setTimeout(function() {
       screenElement.append(loadingImage);
-    }, 800),
+    }, 900),
   
       // Simulate delay before showing the Pokedex
       setTimeout(function() {
