@@ -1,6 +1,6 @@
 @font-face {
-    font-family: 'Pokemon GB';
-    src: url('C:/Users/rando/AppData/Local/Microsoft/Windows/Pokemon GB.ttf') format('truetype');
+    font-family: 'PokemonGB';
+    src: url('fonts/PokemonGB.ttf') format('truetype');
   }
 
   .pokemon-card {
@@ -31,7 +31,7 @@
     top: 44px;
     color: white; /* Set the text color to white */
     word-spacing: 20px;
-    font-family: Pokemon GB;
+    font-family: 'PokemonGB';
     position: relative; /* Set position to relative to establish a new stacking context */
     z-index: 1; /* Set a higher stacking order to display on top of the background image */
   }
@@ -41,7 +41,7 @@
     text-align: left;
     color: black; /* Set the text color to black */
     white-space: nowrap; /* Prevent line breaks between words */
-    font-family: Pokemon GB;
+    font-family: 'PokemonGB';
     position: relative; /* Set position to relative to establish a new stacking context */
     z-index: 1; /* Set a higher stacking order to display on top of the background image */
   }
@@ -64,19 +64,11 @@
     position: absolute;
     left: 400px;
     top: 192px;
-    font-family: Pokemon GB;
-  }
-
-  .pokemonAttributes.pokemonHeight {
-    padding-top: 10px;
-    text-align: left;
-    color: black; /* Set the text color to black */
-    position: relative; /* Set position to relative to establish a new stacking context */
-    z-index: 1; /* Set a higher stacking order to display on top of the background image */
+    font-family: 'PokemonGB';
   }
 
   .pokemonAttributes p {
-    padding-bottom: 5px;
+    padding-bottom: 3px;
     text-align: left;
     color: black; /* Set the text color to black */
     position: relative; /* Set position to relative to establish a new stacking context */
@@ -84,11 +76,10 @@
   }
 
   .pokemon-image {
-    width: 30%;
-    height: 60%;
-    left: 20px;
-    top: 0px;
-    position: relative; /* Set position to relative to establish a new stacking context */
+    width: 32%;
+    height: 64%;
+    float: left;
+    position: absolute; /* Set position to relative to establish a new stacking context */
     z-index: 1; /* Set a higher stacking order to display on top of the background image */
   }
 
