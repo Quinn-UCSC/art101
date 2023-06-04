@@ -1,6 +1,7 @@
 $(document).ready(function() {
     var pokedexElement = $("#pokemon-container");
     var randomizeButton = $("#randomize-button");
+    var screenElement = $(".screen");
   
     randomizeButton.on("click", function() {
       getRandomPokemon();
@@ -60,7 +61,8 @@ $(document).ready(function() {
             var statItem = $("<li>").text(statName + ": " + statValue);
             pokemonAttributes.append(statItem);
           }
-          
+          // Show the screen overlay
+          screenElement.append(pokemonCard);
           // Append the background image to the Pokémon card
           pokemonCard.append(pokemonBackground);
           // Append the Pokémon card elements to the Pokédex container

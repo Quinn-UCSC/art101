@@ -11,25 +11,129 @@
 	
 	<!-- Include a sitewide CSS file for consistent styling across the site -->
 	<link rel="stylesheet" type="text/css" href="../css/site.css">
+	<!-- Including a CSS file for styling a gameboy -->
+	<link rel="stylesheet" type="text/css" href="https://martingauer.com/css-gameboy/gameboy.css">
 	<!-- Lab-specifc CSS file for any special styling of this particular page -->
 	<link rel="stylesheet" type="text/css" href="dex.css">
 	
 	<!-- load jQuery library to make javascript easier (must be above our lab js)-->
 	<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+	<script src="pokedex.js">defer</script>
 </head>
 <body>
 	<!-- Style this page by changing the CSS in ../css/site.css or css/lab.css -->
-	<main id="content">
-		<section>
-			<div class="minor-section">
-					<h2>Welcome to the Pokédex!</h2>
-					<div id="pokedex">
-						<div id="pokemon-container"></div>
-						<button id="randomize-button">Randomize Pokémon</button>
+	<!-- <h2>Welcome to the Pokédex!</h2> -->
+		<div class="gameboy">
+			<div class="front-plate">
+			  <div class="front-plate-head">
+				<div class="vertical-stripe"></div>
+				<div class="vertical-stripe"></div>
+				<div class="vertical-stripe"></div>
+		  
+				<div class="vertical-gouge vertical-gouge-1"></div>
+				<div class="vertical-gouge vertical-gouge-2"></div>
+		  
+				<div class="on-off">
+				  <div class="spike spike-left"><div></div></div>
+				  <div class="spike spike-right"><div></div></div>
+				  <span>
+					OFF
+					<i></i>
+					ON
+				  </span>
+				</div>
+			  </div>
+		  
+			  <div class="screen-container" style = "z-index: 2222;">
+				<div class="screen-headline">
+				  <span>DOT MATRIX WITH STEREO SOUND</span>
+				</div>
+		  
+				<div class="battery-light">
+				  <span>BATTERY</span>
+				</div>
+		  
+				<div class="screen" id="pokemon-container"><!-- Pokedex -->
+				</div>
+			  </div>
+		  
+			  <div class="logo"></div>
+		  
+			  <div id="controller">
+		  
+				<div class="buttons-a-b">
+
+				  <div class="button-b button-key-j" id="controller_b"></div>  
+				<!-- Randomize Button -->
+				<button id="randomize-button" class="button-a button-key-k">
+				  <div id="controller_a"> </div>
+				</button> 
+				</div>
+				
+				<div class="start button-key-m" id="controller_start"><div></div></div>
+		  
+				<div class="select button-key-n" id="controller_select"><div></div></div>
+		  
+				<div class="cross-container">
+				  <div class="spike"><div></div></div>
+				  <div class="spike"><div></div></div>
+				  <div class="spike"><div></div></div>
+				  <div class="spike"><div></div></div>
+		  
+				  <div class="cross" id="controller_dpad">
+					<div class="top-down">
+					  <div class="button-top button-key-w" id="controller_up">
+						<div class="button-stripe"></div>
+						<div class="button-stripe"></div>
+						<div class="button-stripe"></div>
 					  </div>
-					<script src="pokedex.js"></script>
+					  <div class="button-bottom button-key-s" id="controller_down">
+						<div class="button-stripe"></div>
+						<div class="button-stripe"></div>
+						<div class="button-stripe"></div>
+					  </div>
+					</div>
+		  
+					<div class="left-right">
+					  <div class="button-left button-key-a" id="controller_left">
+						<div class="button-stripe"></div>
+						<div class="button-stripe"></div>
+						<div class="button-stripe"></div>
+					  </div>
+					  <div class="button-right button-key-d" id="controller_right">
+						<div class="button-stripe"></div>
+						<div class="button-stripe"></div>
+						<div class="button-stripe"></div>
+					  </div>
+					</div>
+					<div class="cross-middle-bumb"></div>
+				  </div>
+				</div>
+		  
+			  </div>
+		  
+			  <div class="speaker">
+				<div><div class="speaker-inner-shadow"></div></div>
+				<div><div class="speaker-inner-shadow"></div></div>
+				<div><div class="speaker-inner-shadow"></div></div>
+				<div><div class="speaker-inner-shadow"></div></div>
+				<div><div class="speaker-inner-shadow"></div></div>
+				<div><div class="speaker-inner-shadow"></div></div>
+			  </div>
+		  
+			  <div class="phones" id="volume-switch">
+				<div class="vertical-stripe"></div>
+				<div class="vertical-stripe"></div>
+				<div class="vertical-stripe"></div> 
+				<i></i>
+				<span>PHONES</span>
+			  </div>
+		  
 			</div>
-		</section>
+		  
+			<div class="power-button"><div></div></div>
+		  </div>
 		<nav id="links">
 			<!-- Put links to other pages (including the homepage) here. -->
 		</nav>
