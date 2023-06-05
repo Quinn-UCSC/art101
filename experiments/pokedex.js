@@ -46,9 +46,11 @@ $(document).ready(function() {
 
     randomizeButton.on("click", function() {
       playSoundEffect("../audio/SFX_PRESS_AB.wav");
+      getRandomPokemon();
+      setTimeout(function() {
       var cry = "SFX_CRY_" + getRandomNumber() + ".wav";
       playSoundEffect(cry);
-      getRandomPokemon();
+      }, 500);
     });
 
     function playSoundEffect(soundFile) {
