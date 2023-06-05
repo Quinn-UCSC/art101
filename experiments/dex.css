@@ -75,7 +75,7 @@
   .pokemonType.type-2 {
     position: relative;
     left: 298px;
-    top: 64px;
+    top: 63px;
     z-index: 1; /* Set a higher stacking order to display on top of the background image */
   }
 
