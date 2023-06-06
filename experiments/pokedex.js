@@ -1,3 +1,7 @@
+// pokedex.js
+// Author: Michael Quinn
+// Date: June 3rd, 2023
+
 $(document).ready(function() {
     var pokedexElement = $("#pokemon-container");
     var randomizeButton = $("#randomize-button");
@@ -27,7 +31,7 @@ $(document).ready(function() {
       // Simulate delay before showing the Pokedex
       setTimeout(function() {
         loadingImage.remove();
-        playSoundEffect("../audio/startup.mp3");
+        playSoundEffect("../audio/SFX_Start_Up.mp3");
         isPokedexOn = true;
         powerButton.addClass("on");
         getRandomPokemon();
@@ -50,7 +54,7 @@ $(document).ready(function() {
       setTimeout(function() {
       var cry = "SFX_CRY_" + getRandomNumber() + ".wav";
       playSoundEffect(cry);
-      }, 500);
+      }, 200);
     });
 
     function playSoundEffect(soundFile) {
@@ -187,3 +191,9 @@ $(document).ready(function() {
     // Initial random Pokémon
     getRandomPokemon();
   });
+
+  // Function to redirect to a specified URL
+  function redirectToURL(url) {
+    // Set the current window location to the provided URL
+    window.location.href = url;
+  }

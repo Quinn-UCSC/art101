@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>The button that says the name of the user that is using the website.</title>
+
+    <!-- Include a sitewide CSS file for consistent styling across the site -->
+	<link rel="stylesheet" type="text/css" href="../css/site.css">
+	<!-- Lab-specifc CSS file for any special styling of this particular page -->
+	<link rel="stylesheet" type="text/css" href="jim.css">
+	
+	<!-- load jQuery library to make javascript easier (must be above our lab js)-->
+	<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+    <!-- Link to javascript file - DEFER waits until all elements are rendered -->
+	<script src="dropdown.js">defer</script>
+
+    <script src="jimbutton.js">defer</script>
+  </head>
+    <!-- Borrowed code from https://cakeyt.neocities.org/thebuttonthatsaysthenameoftheplayerthatisplayingthegame/index.html Please check them out!-->
+      <body>
+
+        <div id = "heading">
+            <div id = "row.main-navigation"> 
+                <ul id ="main-nav">
+                    <li>
+                    <a href="../index.html">Home</a>
+                        <ul class="dropdown-menu">
+                        <li><a href="pokedex.html">Pokédex</a></li>
+                        <li><a href="jim.html">Jim</a></li>
+                        <!-- Add more experiment options here -->
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="partyContainer"></div>
+      <div class="center">
+        <img id="playButton" src="https://cakeyt.neocities.org/images/jim.png">
+      </div>
+    </body>
+</html>

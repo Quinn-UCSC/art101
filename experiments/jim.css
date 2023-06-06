@@ -1,0 +1,111 @@
+/* Heading code from other pages I made */
+#heading {
+    color: white;
+  }
+  
+#heading a {
+    color: white;
+    text-align: center;
+  }
+
+/* CSS to style the dropdown menu */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin-top: 0;
+    padding: 0;
+    z-index: 1;
+  }
+  
+  li:hover .dropdown-menu {
+    display: block;
+  }
+
+/* Borrowed code from https://cakeyt.neocities.org/thebuttonthatsaysthenameoftheplayerthatisplayingthegame/index.html Please check them out! */
+.center {
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    transform: translate(-50%, -50%);
+    border: 5px solid #FFFFFF;
+    padding: 10px;
+    border: none;
+    }
+/* This is my adjustments to the HTML code. */
+body {
+    background-color: black;
+    margin: 40px auto;
+    width: 200px;
+    text-align: center;
+    padding: 0;
+    overflow: hidden;
+  }
+
+.center img:active {
+    filter: invert(10%);
+    }
+
+#playButton {
+    width: 303px;
+    height: 302px;
+}
+  
+.circle {
+    position: absolute;
+    border-radius: 50%;
+  }
+  
+.shadow {
+    position: absolute;
+    border-radius: 50%;
+    opacity: 0.3;
+    pointer-events: none;
+    transform: scale(0.8);
+    filter: blur(8px);
+  }
+
+  #playButton.rotate {
+    animation: rotateAnimation 2s infinite;
+  }
+  
+  @keyframes rotateAnimation {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+/* Borrowed from: https://codepen.io/Lando/pen/eYvQpy */
+.party-animation {
+    animation: disco 1s infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+    position: relative; /* Add this line for positioning */
+}
+
+@keyframes disco {
+    from {
+        -webkit-filter: hue-rotate(0deg);
+    }
+      
+    to {
+        -webkit-filter: hue-rotate(360deg);
+    }
+}
+  .discoball img {
+    height: 200px;
+    width: 200px;
+    z-index: 2;
+  }
+  .hanger {
+    background: #fff;
+    width: 1px;
+    border-left: 2px solid #fff;
+    border-right: 2px solid #fff;
+    height: 80px;
+    position: absolute;
+    top: -80px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+  }

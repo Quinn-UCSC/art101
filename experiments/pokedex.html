@@ -26,6 +26,7 @@
 	<!-- Style this page by changing the CSS in ../css/site.css or css/lab.css -->
 	<!-- <h2>Welcome to the Pokédex!</h2> -->
 	<section>
+		<!-- Borrowed code from CSS Game Boy by Martin Gauer. Please check them out: https://github.com/attackemartin/css-gameboy -->
 		<div class="gameboy">
 			<div class="front-plate">
 			  <div class="front-plate-head">
@@ -73,9 +74,9 @@
 				</button> 
 				</div>
 				
-				<div class="start button-key-m" id="controller_start"><div></div></div>
-		  
-				<div class="select button-key-n" id="controller_select"><div></div></div>
+				<button class="start button-key-m"><div id="controller_start"></div></button>
+				<!-- Return to home button -->
+				<div class="select button-key-n" onclick="redirectToURL('../index.html')"><div id="controller_select"></div></div>
 		  
 				<div class="cross-container">
 				  <div class="spike"><div></div></div>
