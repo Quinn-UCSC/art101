@@ -72,6 +72,9 @@ $(document).ready(function() {
       showVolumeAdjustmentText("Volume: " + audio.volume)
       adjustVolume(-volumeStep);
     });
+
+    $('#controller_left').on('click', decreaseOpacity);
+    $('#controller_right').on('click', increaseOpacity);
   
     function adjustVolume(step) {
       audio.volume += step;
@@ -197,3 +200,25 @@ $(document).ready(function() {
     // Set the current window location to the provided URL
     window.location.href = url;
   }
+
+  function increaseOpacity() {
+    adjustOpacity(10);
+  }
+  
+  function decreaseOpacity() {
+    adjustOpacity(-10);
+  }
+  
+  function adjustOpacity(increment) {
+    var currentOpacity = parseFloat($('body').css('--after-opacity')) || 0; // Get the current opacity or default to 0
+    var newOpacity = currentOpacity + increment;
+  
+    // Limit the opacity to a minimum of 0% and maximum of 100%
+    newOpacity = Math.max(0, Math.min(100, newOpacity));
+  
+    var styleElement = $('<style>').text('.screen-container .screen:after { opacity: ' + newOpacity + '%; }');
+    $('head').append(styleElement);
+  
+    $('body').css('--after-opacity', newOpacity); // Set the custom CSS variable
+  }
+  

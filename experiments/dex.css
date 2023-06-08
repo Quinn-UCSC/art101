@@ -5,145 +5,178 @@
     font-style: normal; */
   }
 
-  .gameboy {
-    transform: scale(0.6);
-    /* zoom: 1.5; */
+.gameboy {
+  width: 698px;
+  transform: scale(0.6);
+  /* zoom: 1.5; */
   }
 
-  h2 #begin {
-    position: absolute;
-    padding: 20px;
-    text-align: center;
-  }
+.screen-container {
+    width: 585px;
+    border-bottom-left-radius: 23px;
+    border-bottom-right-radius: 73px;
+}
 
-  .overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
-    z-index: 9999; /* Ensures the overlay appears on top of other elements */
-  }
-
-  .pokemon-card {
-    width: 355px;
-    height: 190px;
-    position: relative; /* Set position to relative */
-    display: inline-block;
-    font-family: "PokemonGB";
-  }
-
-  .pokemon-background {
-    /* Existing CSS properties */
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 170%;
-    object-fit: cover;
-    object-position: center top;
-    clip-path: inset(0 0 0 0); /* Crop the bottom 0% of the image */
-    font-family: "PokemonGB";
-  }
-
-  .pokemonInfo {
-    font-size: 12px; /* Adjust the font size as needed */
-    text-align: left;
-    left: 171px;
-    top: 36px;
-    color: white; /* Set the text color to white */
-    word-spacing: 1px;
-    font-family: "PokemonGB";
-    position: relative; /* Set position to relative to establish a new stacking context */
-    z-index: 1; /* Set a higher stacking order to display on top of the background image */
-  }
-
-  .pokemonTypes {
-    font-size: 8.5px; /* Adjust the font size as needed */
-    text-align: left;
-    color: black; /* Set the text color to black */
-    font-weight: 100;
-    white-space: nowrap; /* Prevent line breaks between words */
-    font-family: 'PokemonGB';
-    position: relative; /* Set position to relative to establish a new stacking context */
-    z-index: 1; /* Set a higher stacking order to display on top of the background image */
-  }
-
-  .pokemonType.type-1 {
+.screen-container .screen {
+    width: 423px;
+    left: 46%;
     position: relative;
-    left: 215px;
-    top: 82px;
-    z-index: 1; /* Set a higher stacking order to display on top of the background image */
-  }
+}
+
+.screen-container .screen:after {
+  background-color: #9aa13c;
+  opacity: 0;
+}
+
+.screen-container .battery-light {
+    left: 29px;
+}
+
+h2 #begin {
+  position: absolute;
+  padding: 20px;
+  text-align: center;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+  z-index: 9999; /* Ensures the overlay appears on top of other elements */
+}
+
+.pokemon-card {
+  width: 429px;
+  height: 190px;
+  position: relative; /* Set position to relative */
+  display: inline-block;
+  font-family: "PokemonGB";
+}
+
+.pokemon-background {
+  /* Existing CSS properties */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 178%;
+  object-fit: cover;
+  object-position: center top;
+  clip-path: inset(0 0 0 0); /* Crop the bottom 0% of the image */
+  font-family: "PokemonGB";
+}
+
+.pokemonInfo {
+  font-size: 12px; /* Adjust the font size as needed */
+  text-align: left;
+  left: 210px;
+  top: 39px;
+  color: white; /* Set the text color to white */
+  word-spacing: 1px;
+  font-family: "PokemonGB";
+  position: relative; /* Set position to relative to establish a new stacking context */
+  z-index: 1; /* Set a higher stacking order to display on top of the background image */
+}
+
+.pokemonTypes {
+  font-size: 9.5px; /* Adjust the font size as needed */
+  text-align: left;
+  color: black; /* Set the text color to black */
+  font-weight: 100;
+  white-space: nowrap; /* Prevent line breaks between words */
+  font-family: 'PokemonGB';
+  position: relative; /* Set position to relative to establish a new stacking context */
+  z-index: 1; /* Set a higher stacking order to display on top of the background image */
+}
+
+.pokemonType.type-1 {
+  position: relative;
+  left: 252px;
+  top: 79px;
+  z-index: 1; /* Set a higher stacking order to display on top of the background image */
+}
   
-  .pokemonType.type-2 {
-    position: relative;
-    left: 298px;
-    top: 63px;
-    z-index: 1; /* Set a higher stacking order to display on top of the background image */
-  }
+.pokemonType.type-2 {
+  position: relative;
+  left: 341px;
+  top: 88px;
+  z-index: 1; /* Set a higher stacking order to display on top of the background image */
+}
 
-  .pokemonAttributes {
-    position: absolute;
-    left: 248px;
-    top: 145px;
-    font-family: 'PokemonGB';
-  }
+.pokemonAttributes {
+  position: absolute;
+  left: 291px;
+  top: 151px;
+  font-family: 'PokemonGB';
+}
 
-  .pokemonAttributes p {
-    text-align: left;
-    color: black; /* Set the text color to black */
-    position: relative; /* Set position to relative to establish a new stacking context */
-    z-index: 1; /* Set a higher stacking order to display on top of the background image */
-    margin: 10px;
-    font-weight: 100;
-    padding-bottom: 0px;
-  }
+.pokemonAttributes p {
+  text-align: left;
+  color: black; /* Set the text color to black */
+  position: relative; /* Set position to relative to establish a new stacking context */
+  z-index: 1; /* Set a higher stacking order to display on top of the background image */
+  margin: 10px;
+  font-weight: 100;
+  padding-bottom: 3px;
+}
 
-  .pokemon-image {
-    width: 32%;
-    height: 64%;
-    float: left;
-    position: absolute; /* Set position to relative to establish a new stacking context */
-    z-index: 1; /* Set a higher stacking order to display on top of the background image */
-  }
+.pokemon-image {
+  width: 32%;
+  height: 64%;
+  float: left;
+  position: absolute; /* Set position to relative to establish a new stacking context */
+  z-index: 1; /* Set a higher stacking order to display on top of the background image */
+  top: 80px;
+  left: 18px;
+}
+
+.loading-gif {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
   /* .type-spacing {
     display: inline-block;
   } */
 
-  .long-name {
-    white-space: normal;
-  }
+.long-name {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  top: 39px;  
+}
 
-  .pokemon-card::after {
-    content: "";
-    display: table;
-    clear: both;
-  }
+.pokemon-card::after {
+  content: "";
+  display: table;
+  clear: both;
+}
   
-  .basestats {
-    color: black;
-    position: absolute;
-    left: 32px;
-    top: 230px;
-    z-index: 1;
-    font-size: 11px;
-  }
+.basestats {
+  color: black;
+  position: absolute;
+  left: 1%;
+  top: 245px;
+  z-index: 1;
+  font-size: 12px;
+}
   
-  .basestats ul {
-    padding: 0;
-    margin: 0;
-    list-style-type: none;
-  }
+.basestats ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
   
-  .basestats li {
-    display: inline-block;
-    margin-right: 10px; /* Adjust the spacing between items */
-  }
+.basestats li {
+  display: inline-block;
+  margin-right: 10px; /* Adjust the spacing between items */
+}
 
-  .pokemon-attributes ul {
-    list-style: none;
-    padding: 0;
-  }
+.pokemon-attributes ul {
+  list-style: none;
+  padding: 0;
+}
