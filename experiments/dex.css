@@ -93,7 +93,7 @@
     z-index: 1; /* Set a higher stacking order to display on top of the background image */
     margin: 10px;
     font-weight: 100;
-    padding-bottom: 4px;
+    padding-bottom: 0px;
   }
 
   .pokemon-image {
