@@ -102,7 +102,7 @@ h2 #begin {
 .pokemonType.type-2 {
   position: relative;
   left: 341px;
-  top: 67px;
+  top: 69px;
   z-index: 1; /* Set a higher stacking order to display on top of the background image */
 }
 
