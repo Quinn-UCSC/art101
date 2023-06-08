@@ -5,6 +5,10 @@
     font-style: normal; */
   }
 
+  .gameboy {
+    zoom: 1.5;
+  }
+
   h2 #begin {
     position: absolute;
     padding: 20px;
