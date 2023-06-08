@@ -95,14 +95,14 @@ h2 #begin {
 .pokemonType.type-1 {
   position: relative;
   left: 252px;
-  top: 79px;
+  top: 88px;
   z-index: 1; /* Set a higher stacking order to display on top of the background image */
 }
   
 .pokemonType.type-2 {
   position: relative;
   left: 341px;
-  top: 88px;
+  top: 67px;
   z-index: 1; /* Set a higher stacking order to display on top of the background image */
 }
 
