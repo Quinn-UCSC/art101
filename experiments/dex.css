@@ -82,7 +82,7 @@ h2 #begin {
 }
 
 .pokemonTypes {
-  font-size: 9.5px; /* Adjust the font size as needed */
+  font-size: 9px; /* Adjust the font size as needed */
   text-align: left;
   color: black; /* Set the text color to black */
   font-weight: 100;
@@ -102,7 +102,7 @@ h2 #begin {
 .pokemonType.type-2 {
   position: relative;
   left: 341px;
-  top: 69px;
+  top: 68px;
   z-index: 1; /* Set a higher stacking order to display on top of the background image */
 }
 
@@ -147,7 +147,8 @@ h2 #begin {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  top: 39px;  
+  top: 39px; 
+  width: 210px;
 }
 
 .pokemon-card::after {

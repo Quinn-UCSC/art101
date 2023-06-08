@@ -105,7 +105,7 @@ $(document).ready(function() {
           pokemonAttributesContainer.append(pokemonWeight);
 
           // Adjust font size based on name length
-        if (pokemonData.name.length > 15) {
+        if (pokemonData.name.length > 14) {
           pokemonInfo.addClass("long-name");
         }
           // Continue making Pokémon card
