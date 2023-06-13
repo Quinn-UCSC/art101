@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Stanley from Stanley Parable ~ Tomodachi Game</title>
+
+<!-- Include a sitewide CSS file for consistent styling across the site -->
+<link rel="stylesheet" type="text/css" href="../css/site.css">
+
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+<!-- Link to javascript file - DEFER waits until all elements are rendered -->
+<script src="dropdown.js">defer</script>
+
+<!-- Borrowed code from https://modelviewer.dev/ -->
+<!-- Import the component -->
+<script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.1.1/model-viewer.min.js"></script>
+<style>
+    .box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+        position: relative;
+    }
+    
+    model-viewer {
+        width: 400px;
+        height: 300px;
+        margin: 0 auto;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        cursor: pointer;
+    }
+
+    .emote-container {
+        position: absolute;
+        top: 30%;
+        right: 42%;
+    }
+
+    .emote {
+        display: none;
+        font-size: 24px;
+    }
+
+    .button-container {
+        position: absolute;
+        bottom: 50%;
+        right: 70%;
+    }
+
+    .button {
+        display: block;
+        margin-bottom: 10px;
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+    .score-container {
+        position: absolute;
+        top: 50px;
+        right: 10px;
+    }
+
+    .score-container {
+        position: relative;
+        top: -30%;
+        right: 0%;;
+    }
+    .score {
+        font-size: 24px;
+    }
+</style>
+</head>
+   
+<body>
+    <div class="box">
+        <model-viewer id="myModel" src="https://quinn-ucsc.github.io/art101/experiments/scene(1).glb"></model-viewer>
+        <div class="emote-container">
+            <div class="emote" id="emote-sleep">💤</div>
+            <div class="emote" id="emote-feed">🍔</div>
+            <div class="emote" id="emote-play">⚽</div>
+        </div>
+        <div class="button-container">
+            <div class="button" id="button-sleep">Sleep</div>
+            <div class="button" id="button-feed">Feed</div>
+            <div class="button" id="button-play" style="display: none;">Play</div>
+        </div>
+        <div class="score-container">
+            <div class="score" id="score">Score: 0</div>
+            <div id = "sleep-countdown"></div>
+        </div>
+    </div>
+
+    <script>
+        var emoteTimeout;
+        var score = 0;
+        var isSleeping = false;
+        var canPlay = false;
+        var emoteSleep;
+        var emoteFeed;
+        var emotePlay;
+        var buttonSleep;
+        var buttonFeed;
+        var buttonPlay;
+        var scoreDisplay;
+        var sleepInterval;
+        var sleepCountdown;
+
+        function startSleepInterval() {
+            sleepInterval = setInterval(sleep, 15000);
+            updateSleepCountdown(15); // Set initial countdown value
+        }
+
+        function updateSleepCountdown(seconds) {
+            clearInterval(sleepCountdown);
+            var countdown = seconds;
+            sleepCountdown = setInterval(function() {
+                countdown--;
+                if (countdown >= 0) {
+                    $('#sleep-countdown').text('Sleep in: ' + countdown + 's');
+                }
+            }, 1000);
+        }
+
+        function sleep() {
+            if (!isSleeping) {
+                isSleeping = true;
+                emoteSleep.style.display = 'block';
+                clearTimeout(emoteTimeout);
+                clearInterval(sleepInterval);
+                updateSleepCountdown(15);
+                emoteTimeout = setTimeout(function() {
+                    emoteSleep.style.display = 'none';
+                    isSleeping = false;
+                    canPlay = true;
+                    buttonPlay.style.display = 'block';
+                    score += 2;
+                    scoreDisplay.innerText = 'Score: ' + score;
+                    startSleepInterval();
+                }, 15000);
+            }
+        }
+
+        function feed() {
+            if (!isSleeping) {
+                emoteFeed.style.display = 'block';
+                clearTimeout(emoteTimeout);
+                emoteTimeout = setTimeout(function() {
+                    emoteFeed.style.display = 'none';
+                    score++;
+                    scoreDisplay.innerText = 'Score: ' + score;
+                }, 1000);
+            }
+        }
+
+        function play() {
+            if (!isSleeping && canPlay) {
+                emotePlay.style.display = 'block';
+                clearTimeout(emoteTimeout);
+                emoteTimeout = setTimeout(function() {
+                    emotePlay.style.display = 'none';
+                    score += 5;
+                    scoreDisplay.innerText = 'Score: ' + score;
+                    canPlay = false;
+                    buttonPlay.style.display = 'none';
+                    setTimeout(function() {
+                        canPlay = true;
+                        buttonPlay.style.display = 'block';
+                    }, 15000);
+                }, 1000);
+            }
+        }
+
+        $(document).ready(function() {
+            emoteSleep = document.getElementById('emote-sleep');
+            emoteFeed = document.getElementById('emote-feed');
+            emotePlay = document.getElementById('emote-play');
+            buttonSleep = document.getElementById('button-sleep');
+            buttonFeed = document.getElementById('button-feed');
+            buttonPlay = document.getElementById('button-play');
+            scoreDisplay = document.getElementById('score');
+
+            buttonSleep.addEventListener('click', sleep);
+            buttonFeed.addEventListener('click', feed);
+            buttonPlay.addEventListener('click', play);
+
+            var model = document.getElementById('myModel');
+            model.addEventListener('click', function() {
+                // Add more interactions here if needed
+            });
+
+            // Start the initial interval for sleeping
+            startSleepInterval();
+        });
+
+        $(document).mousemove(function(event) {
+            var model = document.getElementById('myModel');
+            var modelRect = model.getBoundingClientRect();
+            var modelCenterX = modelRect.left + modelRect.width / 2;
+            var modelCenterY = modelRect.top + modelRect.height / 2;
+            var mouseX = event.clientX;
+            var mouseY = event.clientY;
+            var deltaX = mouseX - modelCenterX;
+            var deltaY = mouseY - modelCenterY;
+            var rotationY = deltaX * 0.1;
+            var rotationX = deltaY * 0.1;
+            model.style.transform = 'translate(-50%, -50%) rotateX(' + rotationX + 'deg) rotateY(' + rotationY + 'deg)';
+        });
+    </script>
+</body>
+</html>
